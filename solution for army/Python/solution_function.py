@@ -1,2 +1,2 @@
 def solution(ranks):
-    pass
+    return len([i for i in ranks if i + 1 in ranks])
