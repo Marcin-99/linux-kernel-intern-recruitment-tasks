@@ -2,7 +2,8 @@
 
 
 int look_for_higher_rank(int rank, int ranks[], int N) {
-    for (int i = 0; i < N; i++)
+	int i;
+    for (i = 0; i < N; i++)
         if (ranks[i] == rank + 1) return 1;
     return 0;
 }
@@ -16,7 +17,8 @@ int look_for_higher_rank(int rank, int ranks[], int N) {
 // 2) Add 'N' parameter that will hold value of size of the array.
 int solution(int ranks[], int N) {
     int output = 0;
-    for (int i = 0; i < N; i++)
+    int i;
+    for (i = 0; i < N; i++)
         if (look_for_higher_rank(ranks[i], ranks, N) == 1) output++;
     return output;
 }

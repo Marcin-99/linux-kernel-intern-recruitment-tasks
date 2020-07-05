@@ -1,1 +1,1 @@
-int solution(int ranks[], int N);
+extern int solution(int ranks[], int N);
