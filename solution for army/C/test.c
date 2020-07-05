@@ -14,9 +14,9 @@ void test(int expected, int actual){
 int main()
 {
     //template for adding test case:
-    //  int arr[] = {a, b, c};
-    //  N = sizeof(arr)/sizeof(*arr);
-    //  test(expected_output, solution(arr, N));
+    //int arr[] = {a, b, c};
+    //N = sizeof(arr)/sizeof(*arr);
+    //test(expected_output, solution(arr, N));
 
     int ranks[] = {3, 4, 3, 0, 2, 2, 3, 0, 0};
     int N = sizeof(ranks)/sizeof(*ranks);
