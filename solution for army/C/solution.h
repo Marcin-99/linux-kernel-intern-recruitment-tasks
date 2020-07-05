@@ -1,0 +1,1 @@
+int solution(int ranks[], int N);
