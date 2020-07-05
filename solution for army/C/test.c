@@ -3,11 +3,11 @@
 
 
 void test(int expected, int actual){
-  if(expected == actual) printf("\nPASSED");
-  else {
-    printf("\nFAILED");
-    printf("\n %d is not equal to %d", expected, actual);
-  }
+    if(expected == actual) printf("\nPASSED");
+    else {
+        printf("\nFAILED");
+        printf("\n %d is not equal to %d", expected, actual);
+    }
 }
 
 
