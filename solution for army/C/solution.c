@@ -1,11 +1,13 @@
 #include "solution.h"
 
+#define true 1
+#define false 0
+
 
 int look_for_higher_rank(int rank, int ranks[], int N) {
-	int i;
-    for (i = 0; i < N; i++)
-        if (ranks[i] == rank + 1) return 1;
-    return 0;
+    for (int i = 0; i < N; i++)
+        if (ranks[i] == rank + 1) return true;
+    return false;
 }
 
 
@@ -14,11 +16,10 @@ int look_for_higher_rank(int rank, int ranks[], int N) {
 // solutions:
 // 1) Cheat a little bit and add value of -1 at the end of 'ranks' array to know
 //    where valid values end.
-// 2) Add 'N' parameter that will hold value of size of the array.
+// 2) Add 'N' parameter that will hold size of the array.
 int solution(int ranks[], int N) {
     int output = 0;
-    int i;
-    for (i = 0; i < N; i++)
-        if (look_for_higher_rank(ranks[i], ranks, N) == 1) output++;
+    for (int i = 0; i < N; i++)
+        if (look_for_higher_rank(ranks[i], ranks, N) == true) output++;
     return output;
 }
