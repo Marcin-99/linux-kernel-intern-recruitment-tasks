@@ -1,3 +1,3 @@
-**run tests from command line:**
+***run tests from command line:***
 
 python test.py
